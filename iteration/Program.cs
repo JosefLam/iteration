@@ -10,6 +10,26 @@ namespace iteration
     {
         static void Main(string[] args)
         {
+            // Reapeat 150 times
+            for (int i = 1; i <= 150; i++ ) 
+            {
+                Console.WriteLine($"Ive outputed  {i}  times");
+            }
+
+
+            //repeat until yes
+            bool areNearlyThereYet = false;
+
+            while(areNearlyThereYet == false)
+            {
+                Console.WriteLine("Are we nearly there yet?");
+                areNearlyThereYet = Console.ReadLine().ToLower() =="yes";
+            }
+
+           
+                Console.ReadLine();
+
+
         }
     }
 }
