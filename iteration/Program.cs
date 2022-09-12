@@ -26,8 +26,29 @@ namespace iteration
                 areNearlyThereYet = Console.ReadLine().ToLower() =="yes";
             }
 
-           
-                Console.ReadLine();
+            //repeats from 1 to 50
+            for (int i = 1; i < 50; i++)
+            {
+                //say if number is odd or even
+                string oddoreven = "odd";
+                if (i % 2 == 0)
+                {
+                    oddoreven = "even";
+                }
+                Console.WriteLine($"{i} is {oddoreven}");
+                
+                //say if divisble by 3
+                string oddoreven2 = "not divisible by 3";
+                if (i % 3 == 0)
+                {
+                    oddoreven2 = "divisible by 3";
+                }
+                Console.WriteLine($"{i} is {oddoreven2}");
+
+            }
+
+
+            Console.ReadLine();
 
 
         }
